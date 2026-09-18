@@ -1,0 +1,18 @@
+# 训练产物（checkpoint 每个 ~800MB，不入库；见 AGENTS.md 重建方法）
+outputs/train/
+outputs/eval/traj_ep48.png
+
+# 数据集缓存（449MB，HF_LEROBOT_HOME；用 scripts/download_data.py 重建）
+data/
+
+# HF / pip 缓存与临时目录
+.cache/
+*.lock
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 训练日志：保留（仅 1.6MB，是训练历史的原始证据）
+# outputs/train_full.log  ← 入库
